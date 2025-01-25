@@ -1,0 +1,6 @@
+type: ssm
+family: Mamba
+max_length: ["inf"]
+hidden_size: 256
+state_size: 16
+num_hidden_layers: 32

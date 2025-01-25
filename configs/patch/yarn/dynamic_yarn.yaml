@@ -1,0 +1,3 @@
+name: yarn
+rope_scaling:
+  type: dynamic-yarn

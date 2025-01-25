@@ -1,0 +1,10 @@
+dims: 
+    start: 5
+    end: 20
+    increment: 1
+    interval: 2000
+points: 
+    start: 11
+    end: 101
+    increment: 5
+    interval: 2000

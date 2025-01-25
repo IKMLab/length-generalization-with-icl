@@ -1,0 +1,10 @@
+type: decoder
+family: Llama2
+max_length: [400, 2048]
+hidden_size: [256, 512]
+num_hidden_layers: [4, 8, 16]
+num_attention_heads: [4, 8, 16]
+hidden_act: silu
+rope_theta: 10000
+rope_scaling:
+  type: [none, linear, dynamic]

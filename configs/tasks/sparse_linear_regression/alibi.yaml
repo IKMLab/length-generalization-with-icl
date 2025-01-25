@@ -1,0 +1,17 @@
+model:
+  !include ../../base_model/llama/standard.yaml
+
+patch:
+  !include ../../patch/alibi/alibi.yaml
+
+task:
+  data: gaussian
+  name: sparse_linear_regression
+  curriculum: 
+    !include ../../hyperparams/curriculum/dim-20_pts-50.yaml
+
+training:
+  !include ../../hyperparams/training_args.yaml
+
+wandb:
+  !include ../../logging/wandb.yaml

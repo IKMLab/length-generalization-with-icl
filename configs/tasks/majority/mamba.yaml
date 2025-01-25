@@ -1,0 +1,14 @@
+model:
+  !include ../../base_model/mamba/standard.yaml
+
+task:
+  data: boolean
+  name: majority
+  curriculum: 
+    !include ../../hyperparams/curriculum/dim-50_pts-100.yaml
+
+training:
+  !include ../../hyperparams/training_args.yaml
+
+wandb:
+  !include ../../logging/wandb.yaml
