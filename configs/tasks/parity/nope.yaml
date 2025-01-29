@@ -1,5 +1,5 @@
 model:
-  !include ../../base_model/llama/small.yaml
+  !include ../../base_model/llama/standard.yaml
 
 patch:
   !include ../../patch/nope/nope.yaml

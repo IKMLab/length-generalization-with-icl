@@ -1,6 +1,6 @@
 type: decoder
 family: Llama2
-max_length: [102, 202, 402]
+max_length: [102]
 hidden_size: 256
 num_hidden_layers: 16
 num_attention_heads: 8
