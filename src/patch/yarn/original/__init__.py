@@ -1,0 +1,2 @@
+from .modeling_llama_yarn import LlamaDynamicYaRNScaledRotaryEmbedding as LlamaOldDynamicYaRNScaledRotaryEmbedding
+from .modeling_llama_yarn import LlamaYaRNScaledRotaryEmbedding as LlamaOldYaRNScaledRotaryEmbedding

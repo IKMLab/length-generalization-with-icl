@@ -1,0 +1,17 @@
+model:
+  !include base_model/llama/standard.yaml
+
+patch:
+  !include patch/yarn/dynamic_yarn.yaml
+
+task:
+  data: gaussian
+  name: linear_regression
+  curriculum: 
+    !include hyperparams/curriculum/dim-10_pts-20.yaml
+
+training:
+  !include hyperparams/training_args.yaml
+
+wandb:
+  !include logging/wandb.yaml

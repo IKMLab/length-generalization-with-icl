@@ -1,0 +1,17 @@
+model:
+  !include ../../base_model/llama/standard.yaml
+
+patch:
+  !include ../../patch/fire/fire.yaml
+
+task:
+  data: gaussian
+  name: noisy_linear_regression
+  curriculum: 
+    !include ../../hyperparams/curriculum/dim-50_pts-200.yaml
+
+training:
+  !include ../../hyperparams/training_args.yaml
+
+wandb:
+  !include ../../logging/wandb.yaml

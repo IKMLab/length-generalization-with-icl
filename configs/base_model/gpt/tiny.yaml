@@ -1,0 +1,6 @@
+type: decoder
+family: GPT2
+max_length: [402, 2048]
+n_embed: 256
+n_layer: 2
+n_head: 4

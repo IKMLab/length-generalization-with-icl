@@ -1,0 +1,14 @@
+model:
+  !include ../../base_model/mamba/standard.yaml
+
+task:
+  data: boolean
+  name: dnf
+  curriculum: 
+    !include ../../hyperparams/curriculum/dim-50_pts-200.yaml
+
+training:
+  !include ../../hyperparams/training_args.yaml
+
+wandb:
+  !include ../../logging/wandb.yaml

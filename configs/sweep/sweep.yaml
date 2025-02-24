@@ -1,0 +1,16 @@
+program: train.py
+metric:
+  name: excess_loss
+  goal: minimize
+  
+method: random
+parameters:
+  learning_rate:
+    min: !!float 1e-05
+    max: 0.
+  hidden_size:
+    values: [256, 512]
+  layers:
+    values: [4, 8, 16]
+  heads:
+    values: [4, 8, 16]
