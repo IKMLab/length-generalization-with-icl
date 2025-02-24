@@ -1,6 +1,6 @@
-# master_thesis_DiNan_Lin_P76114723
+# How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning
 
-## How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning
+This repository contains code for the paper: [How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning](https://github.com/IKMLab/length-generalization-with-icl)
 
 Our codebase is based on the following repositories:
 
@@ -24,15 +24,6 @@ Repo structure:
 │       └── input_dim
 │           └── run_date
 │               └── uid
-│
-├── paper/AAAI-25
-│   └── AnonymousSubmission
-│
-├── thesis
-│   ├── oral_defense.ppt
-│   ├── oral_defense.pdf
-│   ├── thesis.tex
-│   └── thesis.bib
 │
 ├── eval_atk.py
 ├── eval_atk.sh         # Refer to README.md $3.3
@@ -142,9 +133,9 @@ Example: `ood_length.png`
 
 ![main](imgs/main_result.png)
 
-### 3.2 Discussion from thesis
+### 3.2 Discussion
 
-#### (Thesis 5.1) Does Increasing Model Size Enhance Performance?
+#### Does Increasing Model Size Enhance Performance?
 
 Please change the `model` field in the config file to `small` or `large` and run the training script.
 
@@ -153,7 +144,7 @@ model:
   !include ../../base_model/llama/$model_size$.yaml # small.yaml or large.yaml
 ```
 
-#### (Thesis 5.2) Can recency bias explain why Transformer fails?
+#### Can recency bias explain why Transformer fails?
 
 Please make sure that the 'eval_date' field in bash file is correct and run:
 
@@ -167,7 +158,7 @@ Example: `avg_attention_score.png`
 
 ![main](imgs/attn.png)
 
-#### (Thesis 5.3) Does inductive bias exist in In-Context Function Learning?
+#### Does inductive bias exist in In-Context Function Learning?
 
 Please make sure that the 'eval_date' field in bash file is correct and run:
 
@@ -181,7 +172,7 @@ Example: `baseline_all_dup.png`
 
 ![main](imgs/dup.png)
 
-#### (Thesis 5.4) Does serial-position effect exist in In-Context Function Learning?
+#### Does serial-position effect exist in In-Context Function Learning?
 
 Please make sure that the 'eval_date' field in bash file is correct and run:
 
@@ -195,7 +186,7 @@ Example: `lost_in_mid.png`
 
 ![main](imgs/lost_in_mid.png)
 
-#### (Thesis 5.5) Will State Space Model Generalize on These Noise?
+#### Will State Space Model Generalize on These Noise?
 
 Our analysis experiment is based on Mamba architecture. Make sure all config files are modified the `model` field to `mamba` and run the training script.
 
@@ -209,3 +200,5 @@ run_pe=("mamba")
 ```
 
 Rerun all the evaluation process aforementioned, except for the attention related analysis.
+
+# Citation
