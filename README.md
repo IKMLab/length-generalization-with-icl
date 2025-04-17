@@ -1,6 +1,6 @@
 # How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning
 
-This repository contains code for the paper: [How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning](https://github.com/IKMLab/length-generalization-with-icl)
+This repository contains code for the paper: [How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning](https://doi.org/10.1609/aaai.v39i23.34637)
 
 Our codebase is based on the following repositories:
 
